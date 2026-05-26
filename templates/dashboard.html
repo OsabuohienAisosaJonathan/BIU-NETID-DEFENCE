@@ -1,0 +1,130 @@
+{% extends "base_dashboard.html" %}
+
+{% block title %}Dashboard Overview{% endblock %}
+{% block header_title %}Dashboard Overview{% endblock %}
+
+{% block content %}
+<div class="row g-4 mb-4">
+    <!-- Stat Card 1 -->
+    <div class="col-md-4">
+        <div class="glass-panel stat-card primary glass-card h-100">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="title">Total Logs</div>
+                <div class="bg-primary bg-opacity-25 p-2 rounded text-primary">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+            </div>
+            <div class="value mt-3">{{ total_logs }}</div>
+            <div class="text-black small mt-2">Analyzed network packets</div>
+        </div>
+    </div>
+    
+    <!-- Stat Card 2 -->
+    <div class="col-md-4">
+        <div class="glass-panel stat-card success glass-card h-100">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="title">Normal Traffic</div>
+                <div class="bg-success bg-opacity-25 p-2 rounded text-success">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+            </div>
+            <div class="value mt-3 text-success">{{ normal_count }}</div>
+            <div class="text-black small mt-2">Safe requests</div>
+        </div>
+    </div>
+
+    <!-- Stat Card 3 -->
+    <div class="col-md-4">
+        <div class="glass-panel stat-card danger glass-card h-100">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="title">Detected Attacks</div>
+                <div class="bg-danger bg-opacity-25 p-2 rounded text-danger">
+                    <i class="fa-solid fa-skull-crossbones"></i>
+                </div>
+            </div>
+            <div class="value mt-3 text-danger">{{ attack_count }}</div>
+            <div class="text-black small mt-2">Threats neutralized</div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="glass-panel p-4 h-100">
+            <h5 class="mb-4 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-chart-pie text-primary"></i> Attack Types Distribution
+            </h5>
+            <div style="height: 300px; display: flex; justify-content: center;">
+                <canvas id="attackChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="glass-panel p-4 h-100">
+            <h5 class="mb-4 d-flex align-items-center gap-2">
+                <i class="fa-solid fa-network-wired text-primary"></i> Traffic by Protocol
+            </h5>
+            <div style="height: 300px;">
+                <canvas id="protocolChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    const attackTypes = {{ attack_types|default({}) | tojson }};
+    const trafficByProtocol = {{ traffic_by_protocol|default({}) | tojson }};
+    
+    // Global chart defaults for dark mode
+    Chart.defaults.color = '#94a3b8';
+    Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.1)';
+
+    new Chart(document.getElementById('attackChart'), {
+        type: 'doughnut',
+        data: {
+            labels: Object.keys(attackTypes),
+            datasets: [{
+                data: Object.values(attackTypes),
+                backgroundColor: ['#ff4b4b', '#00f2fe', '#7b2cbf', '#f5a623', '#28B463'],
+                borderWidth: 0,
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { position: 'right' }
+            }
+        }
+    });
+
+    new Chart(document.getElementById('protocolChart'), {
+        type: 'bar',
+        data: {
+            labels: Object.keys(trafficByProtocol),
+            datasets: [{
+                label: 'Requests',
+                data: Object.values(trafficByProtocol),
+                backgroundColor: 'rgba(0, 242, 254, 0.6)',
+                borderColor: '#00f2fe',
+                borderWidth: 1,
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+</script>
+{% endblock %}

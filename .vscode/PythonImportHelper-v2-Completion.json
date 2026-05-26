@@ -1,0 +1,882 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "MultiOutputClassifier",
+        "importPath": "sklearn.multioutput",
+        "description": "sklearn.multioutput",
+        "isExtraImport": true,
+        "detail": "sklearn.multioutput",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "resample",
+        "importPath": "sklearn.utils",
+        "description": "sklearn.utils",
+        "isExtraImport": true,
+        "detail": "sklearn.utils",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDS",
+        "importPath": "libs.NetIDS",
+        "description": "libs.NetIDS",
+        "isExtraImport": true,
+        "detail": "libs.NetIDS",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDS",
+        "importPath": "libs.NetIDS",
+        "description": "libs.NetIDS",
+        "isExtraImport": true,
+        "detail": "libs.NetIDS",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_from_directory",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDS",
+        "importPath": "NetIDS",
+        "description": "NetIDS",
+        "isExtraImport": true,
+        "detail": "NetIDS",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDSFeatureNBased",
+        "importPath": "libs.NetIDSFeatureNBased",
+        "description": "libs.NetIDSFeatureNBased",
+        "isExtraImport": true,
+        "detail": "libs.NetIDSFeatureNBased",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDS",
+        "kind": 6,
+        "importPath": "libs.NetIDS",
+        "description": "libs.NetIDS",
+        "peekOfCode": "class NetIDS:\n    def __init__(self, model_path=\"../models/netids_model.pkl\"): \n        self.model_path = model_path\n        self.model = None\n        self.scaler = None\n        self.pca = None\n    def load_datasets(self, dataset_dir):        \n        # Load datasets\n        df_ransomware = pd.read_csv(os.path.join(dataset_dir, 'Ransomware_attack.csv'), low_memory=False)\n        df_ddos = pd.read_csv(os.path.join(dataset_dir, 'DDoS_HTTP_Flood_attack.csv'), low_memory=False)",
+        "detail": "libs.NetIDS",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDSFeatureNBased",
+        "kind": 6,
+        "importPath": "libs.NetIDSFeatureNBased",
+        "description": "libs.NetIDSFeatureNBased",
+        "peekOfCode": "class NetIDSFeatureNBased:\n    def __init__(self, pretrained_model_path=None, preprocessed_dataset_location=\"datasets/processed.csv\"):\n        self.preprocessed_dataset_location = preprocessed_dataset_location\n        self.feature_columns = None\n        if pretrained_model_path and os.path.exists(pretrained_model_path):\n            self.load_model(pretrained_model_path)\n        else:\n            self.rf_pretrained = RandomForestClassifier(n_estimators=100, random_state=42)\n            # Classifiers for transfer learning\n            self.label_classifier = LogisticRegression(max_iter=1000, random_state=42)",
+        "detail": "libs.NetIDSFeatureNBased",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "class User:\n\tdef __init__(self):\n\t\tcreate = not os.path.exists('database.db')\n\t\tself.db = sqlite3.connect('database.db')\n\t\tif create:\n\t\t\tself.cursor = self.db.cursor()\n\t\t\tself.create(\"CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL)\")\n\tdef create(self, query=''):\n\t\tself.cursor.execute(query)\n\t\tself.db.commit()",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcreate",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcreate = not os.path.exists('database.db')\n\t\tself.db = sqlite3.connect('database.db')\n\t\tif create:\n\t\t\tself.cursor = self.db.cursor()\n\t\t\tself.create(\"CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL)\")\n\tdef create(self, query=''):\n\t\tself.cursor.execute(query)\n\t\tself.db.commit()\n\tdef update(self, name, phone, email, username, password):\n\t\tif not name or not email or not phone or not username:",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.db",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tself.db = sqlite3.connect('database.db')\n\t\tif create:\n\t\t\tself.cursor = self.db.cursor()\n\t\t\tself.create(\"CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL)\")\n\tdef create(self, query=''):\n\t\tself.cursor.execute(query)\n\t\tself.db.commit()\n\tdef update(self, name, phone, email, username, password):\n\t\tif not name or not email or not phone or not username:\n\t\t\treturn 'failed'",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tself.cursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\t\tself.cursor = self.db.cursor()\n\t\t\tself.create(\"CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL)\")\n\tdef create(self, query=''):\n\t\tself.cursor.execute(query)\n\t\tself.db.commit()\n\tdef update(self, name, phone, email, username, password):\n\t\tif not name or not email or not phone or not username:\n\t\t\treturn 'failed'\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE email=? and password=?\",(email, password, ))",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE email=? and password=?\",(email, password, ))\n\t\tdetails = cursor.fetchone()  \n\t\tif not details:\n\t\t\treturn []\n\t\tcursor = self.db.cursor() \n\t\tcursor.execute(\"UPDATE users set name=?, phone=?, username=? where email=?\",(name, phone, username, email))\n\t\tself.db.commit()\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=? and password=?\",(username, password, ))",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdetails",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tdetails = cursor.fetchone()  \n\t\tif not details:\n\t\t\treturn []\n\t\tcursor = self.db.cursor() \n\t\tcursor.execute(\"UPDATE users set name=?, phone=?, username=? where email=?\",(name, phone, username, email))\n\t\tself.db.commit()\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=? and password=?\",(username, password, ))\n\t\tdetails = cursor.fetchone() \n\t\treturn details",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor() \n\t\tcursor.execute(\"UPDATE users set name=?, phone=?, username=? where email=?\",(name, phone, username, email))\n\t\tself.db.commit()\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=? and password=?\",(username, password, ))\n\t\tdetails = cursor.fetchone() \n\t\treturn details\n\tdef reset_password(self, username, new_password):\n\t\t#check if user exists\n\t\tcursor = self.db.cursor()",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=? and password=?\",(username, password, ))\n\t\tdetails = cursor.fetchone() \n\t\treturn details\n\tdef reset_password(self, username, new_password):\n\t\t#check if user exists\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=?\",(username, ))\n\t\tdetails = cursor.fetchone()  \n\t\tif not details:",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdetails",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tdetails = cursor.fetchone() \n\t\treturn details\n\tdef reset_password(self, username, new_password):\n\t\t#check if user exists\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=?\",(username, ))\n\t\tdetails = cursor.fetchone()  \n\t\tif not details:\n\t\t\treturn 'failed'\n\t\tcursor = self.db.cursor()",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * from users WHERE username=?\",(username, ))\n\t\tdetails = cursor.fetchone()  \n\t\tif not details:\n\t\t\treturn 'failed'\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"UPDATE users set password=? where username=?\",(new_password, username, ))\n\t\tself.db.commit()\n\t\treturn 'done'\n\tdef register(self, name, email, phone, username, password):",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdetails",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tdetails = cursor.fetchone()  \n\t\tif not details:\n\t\t\treturn 'failed'\n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"UPDATE users set password=? where username=?\",(new_password, username, ))\n\t\tself.db.commit()\n\t\treturn 'done'\n\tdef register(self, name, email, phone, username, password):\n\t\tif not name or not email or not password or not username or not phone:\n\t\t\treturn 'failed'",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"UPDATE users set password=? where username=?\",(new_password, username, ))\n\t\tself.db.commit()\n\t\treturn 'done'\n\tdef register(self, name, email, phone, username, password):\n\t\tif not name or not email or not password or not username or not phone:\n\t\t\treturn 'failed'\n\t\tdetails = self.login(username, password) \n\t\tif details: \n\t\t\treturn 'user_exits'",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdetails",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tdetails = self.login(username, password) \n\t\tif details: \n\t\t\treturn 'user_exits'\n\t\tcursor = self.db.cursor() \n\t\tcursor.execute(\"INSERT INTO users (name, email, phone, password, username) VALUES (?, ?, ?, ?, ?)\",(name, email, phone, password, username))\n\t\tself.db.commit()\n\t\treturn 'done'\n\tdef login(self, username, password):\n\t\tif not username or not password:\n\t\t\treturn 'failed' ",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor() \n\t\tcursor.execute(\"INSERT INTO users (name, email, phone, password, username) VALUES (?, ?, ?, ?, ?)\",(name, email, phone, password, username))\n\t\tself.db.commit()\n\t\treturn 'done'\n\tdef login(self, username, password):\n\t\tif not username or not password:\n\t\t\treturn 'failed' \n\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * FROM users WHERE username=? AND password=?\",(username, password, ))\n\t\tdetails = cursor.fetchone()",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tcursor",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tcursor = self.db.cursor()\n\t\tcursor.execute(\"SELECT * FROM users WHERE username=? AND password=?\",(username, password, ))\n\t\tdetails = cursor.fetchone()\n\t\tprint('login details:', details) \n\t\tif not details:\n\t\t\treturn None\n\t\telse:\n\t\t\tuser = {\n\t\t\t\t\"email\": details[0],\n\t\t\t\t\"username\": details[1],",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tdetails",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\tdetails = cursor.fetchone()\n\t\tprint('login details:', details) \n\t\tif not details:\n\t\t\treturn None\n\t\telse:\n\t\t\tuser = {\n\t\t\t\t\"email\": details[0],\n\t\t\t\t\"username\": details[1],\n\t\t\t\t\"name\": details[2],\n\t\t\t\t\"password\": details[3],",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tuser",
+        "kind": 5,
+        "importPath": "libs.User",
+        "description": "libs.User",
+        "peekOfCode": "\t\t\tuser = {\n\t\t\t\t\"email\": details[0],\n\t\t\t\t\"username\": details[1],\n\t\t\t\t\"name\": details[2],\n\t\t\t\t\"password\": details[3],\n\t\t\t\t\"phone\": details[4]\n\t\t\t}\n\t\t\treturn user",
+        "detail": "libs.User",
+        "documentation": {}
+    },
+    {
+        "label": "NetIDSFeatureNBased",
+        "kind": 6,
+        "importPath": "libs.console_model",
+        "description": "libs.console_model",
+        "peekOfCode": "class NetIDSFeatureNBased:\n    def __init__(self, pretrained_model_path=None, preprocessed_dataset_location=\"datasets/processed.csv\"):\n        self.preprocessed_dataset_location = preprocessed_dataset_location\n        if pretrained_model_path and os.path.exists(pretrained_model_path):\n            self.load_model(pretrained_model_path)\n        else:\n            self.rf_pretrained = RandomForestClassifier(n_estimators=100, random_state=42)\n            # Classifiers for transfer learning\n            self.label_classifier = LogisticRegression(max_iter=1000, random_state=42)\n            self.type_classifier = LogisticRegression(max_iter=1000, random_state=42)",
+        "detail": "libs.console_model",
+        "documentation": {}
+    },
+    {
+        "label": "FileSystem",
+        "kind": 6,
+        "importPath": "FileSystem",
+        "description": "FileSystem",
+        "peekOfCode": "class FileSystem():\n    def getRoot(self):\n        root = os.path.dirname(os.path.abspath(__file__))\n        return root",
+        "detail": "FileSystem",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    return render_template(\"login.html\")\n@app.route(\"/dashboard\")\ndef dashboard():\n    global netids_model\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    user_details = session.get('details')\n    df = netids_model.load_datasets()\n    print('df:', df)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def dashboard():\n    global netids_model\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    user_details = session.get('details')\n    df = netids_model.load_datasets()\n    print('df:', df)\n    # Summary statistics\n    total_logs = len(df)\n    attack_count = df[df['Attack_type'] != 1].shape[0]",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def profile():\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    user_details = session.get('details')\n    print('user_details:', user_details)\n    return render_template(\"profile.html\", name=user_details[2], user=user_details)\n@app.route(\"/monitor\")\ndef monitor():\n    if 'details' not in session:\n        return redirect(url_for('login'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "monitor",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def monitor():\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    return render_template(\"monitor.html\", csv_uploaded=UPLOADED_DATASET)\n@app.route(\"/monitor/data\")\ndef monitor_data():\n    global netids_model, MODEL_IS_TRAINED\n    if not MODEL_IS_TRAINED:        \n        df = netids_model.load_datasets()\n        feature_cols = [col for col in df.columns if col not in [\"Attack_label\", \"Attack_type\"]]",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "monitor_data",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def monitor_data():\n    global netids_model, MODEL_IS_TRAINED\n    if not MODEL_IS_TRAINED:        \n        df = netids_model.load_datasets()\n        feature_cols = [col for col in df.columns if col not in [\"Attack_label\", \"Attack_type\"]]\n        label_col = \"Attack_label\"\n        type_col = \"Attack_type\"\n        # Train\n        log_step(\"[INFO] Starting training...\")\n        MODEL_IS_TRAINED = netids_model.train(df, feature_cols, label_col, type_col)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "log_step",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def log_step(message):\n    \"\"\"Append log messages to the training log list.\"\"\"\n    training_logs.append(message)\n    print(message)\n# INPUT\n@app.route('/input', methods=['GET', 'POST'])\ndef input():\n    global UPLOADED_DATASET, netids_model\n    UPLOADED_DATASET = False\n    if 'details' not in session:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "input",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def input():\n    global UPLOADED_DATASET, netids_model\n    UPLOADED_DATASET = False\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    if request.method == 'POST':\n        file = request.files['csv_file']\n        if file and file.filename.endswith('.csv'):\n            filepath = os.path.join(DATASET_PATH, file.filename)\n            file.save(filepath)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "process",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def process():\n    global UPLOADED_DATASET\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    if os.path.exists(\"models/netids_transfer.pkl\"):\n        log_step(\"[INFO] A trained model already exists.\")\n    if not training_logs or training_logs[-1] not in (\"[SUCCESS] Model training completed successfully.\", \"[ERROR]\"):\n        # Start training in a background thread\n        training_logs.clear()\n        threading.Thread(target=train_netids_model).start()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "train_netids_model",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def train_netids_model():\n    global netids_model, MODEL_IS_TRAINED\n    try:\n        log_step(\"[INFO] Loading datasets...\")\n        df = netids_model.load_datasets()\n        print('loaded df:', df.head())\n        feature_cols = [col for col in df.columns if col not in [\"Attack_label\", \"Attack_type\"]]\n        label_col = \"Attack_label\"\n        type_col = \"Attack_type\"\n        # Train",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "pretrain_progress",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def pretrain_progress():\n    def event_stream():\n        last_index = 0\n        while True:\n            if last_index < len(training_logs):\n                yield f\"data: {training_logs[last_index]}\\n\\n\"\n                last_index += 1\n            time.sleep(0.5)\n    return Response(event_stream(), content_type=\"text/event-stream\")\n@app.route('/plots/<image_name>')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "plots",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def plots(image_name):\n    if os.path.exists(os.path.join('plots', image_name)):\n        return send_from_directory('plots',  str(image_name))\n    else:\n        return send_from_directory('plots', 'no_image.jpg')\n'''\nUSER ACCESS\n'''\n@app.route('/login')\ndef login():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    return render_template(\"login.html\")\n@app.route('/register')\ndef register():\n    return render_template(\"register.html\")\n@app.route('/forgot_login')\ndef forgot_login():\n    return render_template(\"forgot_login.html\")\n@app.route('/do_reset_password', methods=['POST'])\ndef reset_password():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def register():\n    return render_template(\"register.html\")\n@app.route('/forgot_login')\ndef forgot_login():\n    return render_template(\"forgot_login.html\")\n@app.route('/do_reset_password', methods=['POST'])\ndef reset_password():\n    if request.method == 'POST':\n        username = request.form.get('username')\n        new_password = request.form.get('new_password')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "forgot_login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def forgot_login():\n    return render_template(\"forgot_login.html\")\n@app.route('/do_reset_password', methods=['POST'])\ndef reset_password():\n    if request.method == 'POST':\n        username = request.form.get('username')\n        new_password = request.form.get('new_password')\n        re_new_password = request.form.get('re_new_password')\n        if not username:\n            return render_template(\"forgot_login.html\", message='Invalid user')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "reset_password",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def reset_password():\n    if request.method == 'POST':\n        username = request.form.get('username')\n        new_password = request.form.get('new_password')\n        re_new_password = request.form.get('re_new_password')\n        if not username:\n            return render_template(\"forgot_login.html\", message='Invalid user')\n        if not new_password:\n            return render_template(\"forgot_login.html\", message='Please enter new password')\n        if not re_new_password:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "doregister",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def doregister():\n    if request.method == 'POST':\n        name = request.form.get('name')\n        phone = request.form.get('phone')\n        email = request.form.get('email')\n        username = request.form.get('username')\n        password = request.form.get('password')\n        from libs.User import User as db\n        details = db().register(name, email, phone, username, password)\n        if details == 'done':",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "update_profile",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def update_profile():\n    if request.method == 'POST':\n        name = request.form.get('name')\n        phone = request.form.get('phone')\n        email = request.form.get('email')\n        username = request.form.get('username')\n        password = request.form.get('password')\n        from libs.User import User as db\n        details = db().update(name, phone, email, username, password)\n        if details:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "dologin",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def dologin():\n    if request.method == 'POST':\n        username = request.form.get('username')\n        password = request.form.get('password')\n        from libs.User import User as db\n        details = db().login(username, password)\n        if details:\n            session['details'] = details\n            return redirect(\"/dashboard\")\n        else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def logout():\n    session['details'] = None\n    return render_template(\"login.html\")\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "path = sys.path\nparent = os.path.dirname(__file__)\nloc = parent + '/libs'\ntry:\n    path.index(loc)\nexcept(ValueError):\n    sys.path.append(loc)\nfrom flask import Flask, render_template, request, jsonify, session, redirect, Response, send_from_directory,url_for\nimport os, time, threading\napp = Flask('__name__')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "parent",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "parent = os.path.dirname(__file__)\nloc = parent + '/libs'\ntry:\n    path.index(loc)\nexcept(ValueError):\n    sys.path.append(loc)\nfrom flask import Flask, render_template, request, jsonify, session, redirect, Response, send_from_directory,url_for\nimport os, time, threading\napp = Flask('__name__')\napp.secret_key = b'k843h/jd6uJU73R6778r6ibYGU' ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "loc",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "loc = parent + '/libs'\ntry:\n    path.index(loc)\nexcept(ValueError):\n    sys.path.append(loc)\nfrom flask import Flask, render_template, request, jsonify, session, redirect, Response, send_from_directory,url_for\nimport os, time, threading\napp = Flask('__name__')\napp.secret_key = b'k843h/jd6uJU73R6778r6ibYGU' \n# Load trained model",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask('__name__')\napp.secret_key = b'k843h/jd6uJU73R6778r6ibYGU' \n# Load trained model\nMODEL_PATH = \"models/netids_model.pkl\"\nDATASET_PATH = \"\"\nUPLOADED_DATASET = 'upload'\nMODEL_IS_TRAINED = False\nnetids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.secret_key = b'k843h/jd6uJU73R6778r6ibYGU' \n# Load trained model\nMODEL_PATH = \"models/netids_model.pkl\"\nDATASET_PATH = \"\"\nUPLOADED_DATASET = 'upload'\nMODEL_IS_TRAINED = False\nnetids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():\n    return render_template(\"login.html\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_PATH",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MODEL_PATH = \"models/netids_model.pkl\"\nDATASET_PATH = \"\"\nUPLOADED_DATASET = 'upload'\nMODEL_IS_TRAINED = False\nnetids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():\n    return render_template(\"login.html\")\n@app.route(\"/dashboard\")\ndef dashboard():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "DATASET_PATH",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "DATASET_PATH = \"\"\nUPLOADED_DATASET = 'upload'\nMODEL_IS_TRAINED = False\nnetids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():\n    return render_template(\"login.html\")\n@app.route(\"/dashboard\")\ndef dashboard():\n    global netids_model",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOADED_DATASET",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "UPLOADED_DATASET = 'upload'\nMODEL_IS_TRAINED = False\nnetids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():\n    return render_template(\"login.html\")\n@app.route(\"/dashboard\")\ndef dashboard():\n    global netids_model\n    if 'details' not in session:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_IS_TRAINED",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MODEL_IS_TRAINED = False\nnetids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():\n    return render_template(\"login.html\")\n@app.route(\"/dashboard\")\ndef dashboard():\n    global netids_model\n    if 'details' not in session:\n        return redirect(url_for('login'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "netids_model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "netids_model = NetIDSFeatureNBased(preprocessed_dataset_location=DATASET_PATH) \n@app.route('/')\ndef index():\n    return render_template(\"login.html\")\n@app.route(\"/dashboard\")\ndef dashboard():\n    global netids_model\n    if 'details' not in session:\n        return redirect(url_for('login'))\n    user_details = session.get('details')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "training_logs",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "training_logs = []\ndef log_step(message):\n    \"\"\"Append log messages to the training log list.\"\"\"\n    training_logs.append(message)\n    print(message)\n# INPUT\n@app.route('/input', methods=['GET', 'POST'])\ndef input():\n    global UPLOADED_DATASET, netids_model\n    UPLOADED_DATASET = False",
+        "detail": "app",
+        "documentation": {}
+    }
+]

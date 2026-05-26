@@ -1,0 +1,49 @@
+{% extends "base_dashboard.html" %}
+
+{% block title %}Start Processing{% endblock %}
+{% block header_title %}Step 1: Input Data{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        
+        <!-- Progress Stepper -->
+        <div class="d-flex justify-content-between align-items-center mb-5 position-relative">
+            <div class="progress position-absolute top-50 start-0 w-100 translate-middle-y" style="height: 2px; z-index: 0; background-color: var(--border-color);">
+                <div class="progress-bar" role="progressbar" style="width: 0%; background: var(--primary-glow);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            
+            <div class="d-flex flex-column align-items-center position-relative z-1">
+                <div class="bg-primary text-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border: 4px solid var(--bg-white);">1</div>
+                <div class="small mt-2 fw-bold text-primary">Upload</div>
+            </div>
+            <div class="d-flex flex-column align-items-center position-relative z-1">
+                <div class="bg-white text-black rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border: 4px solid var(--border-color);">2</div>
+                <div class="small mt-2 text-black">Process</div>
+            </div>
+            <div class="d-flex flex-column align-items-center position-relative z-1">
+                <div class="bg-white text-black rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; border: 4px solid var(--border-color);">3</div>
+                <div class="small mt-2 text-black">Monitor</div>
+            </div>
+        </div>
+
+        <div class="glass-panel p-5 text-center border border-primary" style="border-color: rgba(0,242,254,0.3) !important;">
+            <div class="mb-4">
+                <i class="fa-solid fa-cloud-arrow-up text-gradient" style="font-size: 4rem;"></i>
+            </div>
+            <h4 class="mb-3 text-black">Upload Network Traffic Dataset</h4>
+            <p class="text-black mb-4">Please upload a valid .csv file containing the network logs you want to analyze.</p>
+
+            <form action="{{ url_for('input') }}" method="POST" enctype="multipart/form-data">
+                <div class="mb-4 text-start">
+                    <input class="form-control form-control-lg bg-white text-black border-secondary" type="file" name="csv_file" accept=".csv" required>
+                </div>
+                <button type="submit" class="btn btn-glow btn-lg px-5">
+                    <i class="fa-solid fa-upload me-2"></i> Upload & Continue
+                </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

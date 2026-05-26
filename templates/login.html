@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - NetIDS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .split-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .split-left {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem;
+            position: relative;
+        }
+        .split-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-white);
+            padding: 2rem;
+        }
+        .overlay-graphic {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at center, rgba(0, 242, 254, 0.2), transparent 60%);
+            pointer-events: none;
+        }
+        @media (max-width: 991px) {
+            .split-left { display: none; }
+        }
+    </style>
+</head>
+<body> 
+    
+    <div class="split-layout">
+        <!-- Visual Side -->
+        <div class="split-left">
+            <div class="overlay-graphic"></div>
+            <div style="z-index: 1;">
+                <a href="{{ url_for('index') }}" class="text-dark text-decoration-none d-inline-flex align-items-center gap-2 mb-5">
+                    <i class="fa-solid fa-arrow-left"></i> Return Home
+                </a>
+                <div class="d-inline-flex align-items-center justify-content-center bg-white p-3 rounded mb-4" style="border: 1px solid var(--primary-glow);">
+                    <i class="fa-solid fa-shield-halved text-gradient fs-1"></i>
+                </div>
+                <h1 class="display-4 fw-bold text-dark mb-3">Welcome Back to <br>NetIDS</h1>
+                <p class="lead text-black opacity-75 mb-5">Sign in to access your centralized command center. Monitor traffic, analyze neural interdictions, and secure your perimeter.</p>
+                
+                <div class="d-flex gap-4">
+                    <div class="d-flex align-items-center gap-2 text-dark opacity-75">
+                        <i class="fa-solid fa-check-circle text-success"></i> Secure 256-bit
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-dark opacity-75">
+                        <i class="fa-solid fa-check-circle text-success"></i> Neural Encrypted
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="split-right">
+            <div class="auth-container w-100 animate-fade-in" style="max-width: 450px;">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-dark">Sign In</h2>
+                    <p style="color: #000000;">Enter your credentials to continue</p>
+                </div>
+
+                <form action="{{url_for('dologin')}}" method="POST">
+                    <div class="mb-4">
+                        <label class="form-label small fw-bold text-dark tracking-wide text-uppercase">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0" style="border-color: rgba(0,0,0,0.1); color: #000000;">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text" name="username" class="form-control border-start-0 ps-0 bg-white text-dark" style="border-color: rgba(0,0,0,0.1);" placeholder="Enter your username" required>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label class="form-label small fw-bold text-dark tracking-wide text-uppercase">Password</label>
+                            <a href="{{url_for('forgot_login')}}" class="small text-decoration-none text-gradient fw-bold">Forgot?</a>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0" style="border-color: rgba(0,0,0,0.1); color: #000000;">
+                                <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <input type="password" name="password" class="form-control border-start-0 ps-0 bg-white text-dark" style="border-color: rgba(0,0,0,0.1);" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    {% if message %}
+                    <div class="alert alert-danger bg-danger text-dark border-0 py-3 small mb-4 fw-bold">
+                        <i class="fa-solid fa-circle-exclamation me-2"></i> {{message}}
+                    </div>
+                    {% endif %}
+
+                    <div class="d-grid mt-5">
+                        <button type="submit" class="btn btn-glow py-3 fs-5">Authenticate</button>
+                    </div>
+                </form>
+
+                <div class="text-center mt-5">
+                    <span style="color: #000000;">New operative?</span> 
+                    <a href="{{url_for('register')}}" class="fw-bold text-dark text-decoration-none border-bottom border-primary pb-1 ms-1">Request Access</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

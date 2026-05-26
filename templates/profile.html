@@ -1,0 +1,69 @@
+{% extends "base_dashboard.html" %}
+
+{% block title %}User Profile{% endblock %}
+{% block header_title %}User Profile{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        
+        {% if message %}
+        <div class="alert alert-success bg-success bg-opacity-25 text-success border-0 py-2 small mb-4">
+            <i class="fa-solid fa-check-circle me-2"></i> {{ message }}
+        </div>
+        {% endif %}
+
+        <div class="glass-panel p-5 text-center mb-4 relative">
+            <div class="d-inline-flex align-items-center justify-content-center bg-white p-2 rounded-circle mb-3" style="width: 100px; height: 100px; border: 2px solid var(--primary-glow);">
+                <i class="fa-solid fa-user-astronaut text-gradient" style="font-size: 2.5rem;"></i>
+            </div>
+            <h3 class="mb-1 fw-bold">{{ user.name }}</h3>
+            <p class="text-black">@{{ user.username }}</p>
+            
+            <div class="d-flex justify-content-center gap-4 mt-4 text-start">
+                <div class="glass-panel px-4 py-2" style="background: rgba(255,255,255,0.02)">
+                    <div class="small text-black mb-1"><i class="fa-solid fa-envelope me-1"></i> Email</div>
+                    <div class="fw-semibold">{{ user.email }}</div>
+                </div>
+                <div class="glass-panel px-4 py-2" style="background: rgba(255,255,255,0.02)">
+                    <div class="small text-black mb-1"><i class="fa-solid fa-phone me-1"></i> Phone</div>
+                    <div class="fw-semibold">{{ user.phone|default('Not set') }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-panel p-4">
+            <h5 class="mb-4"><i class="fa-solid fa-pen-to-square text-primary me-2"></i> Edit Profile</h5>
+            
+            <form method="POST" action="{{ url_for('update_profile') }}">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label small text-black">Email Address (Read-Only)</label>
+                        <input type="email" name="email" value="{{ user.email }}" class="form-control bg-white text-black" readonly>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small text-black">Username</label>
+                        <input type="text" name="username" value="{{ user.username }}" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small text-black">Full Name</label>
+                        <input type="text" name="name" value="{{ user.name }}" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small text-black">Phone Number</label>
+                        <input type="text" name="phone" value="{{ user.phone|default('') }}" class="form-control">
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label small text-black">New Password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Leave blank to keep current password">
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="submit" class="btn btn-glow"><i class="fa-solid fa-save me-2"></i> Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

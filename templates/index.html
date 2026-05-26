@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetIDS - Enterprise Neural Network Security</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}?v=1.1" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background: #ffffff;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 0;
+            transform: perspective(500px) rotateX(60deg) translateY(-100px) translateZ(-200px);
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: perspective(500px) rotateX(60deg) translateY(0) translateZ(-200px); }
+            100% { transform: perspective(500px) rotateX(60deg) translateY(50px) translateZ(-200px); }
+        }
+
+        .glow-orb {
+            position: absolute;
+            width: 40vw;
+            height: 40vw;
+            background: radial-gradient(circle, rgba(0,242,254,0.15) 0%, rgba(0,0,0,0) 70%);
+            top: -20%;
+            right: -10%;
+            z-index: 1;
+            border-radius: 50%;
+        }
+
+        .glow-orb-2 {
+            position: absolute;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(123,44,191,0.15) 0%, rgba(0,0,0,0) 70%);
+            bottom: -20%;
+            left: -20%;
+            z-index: 1;
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            z-index: 10;
+            position: relative;
+        }
+
+        .code-window {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,242,254,0.1);
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+        }
+
+        .code-header {
+            background: rgba(0,0,0,0.05);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .code-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .terminal-text {
+            font-family: 'Consolas', 'Monaco', monospace;
+            padding: 20px;
+            color: #000000;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid var(--primary-glow);
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: var(--primary-glow); } }
+
+        .feature-box {
+            background: linear-gradient(145deg, rgba(240, 240, 245, 0.8), rgba(255, 255, 255, 0.9));
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 16px;
+            padding: 40px 30px;
+            transition: all 0.4s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border-color: rgba(0,242,254,0.3);
+        }
+
+        .feature-box:hover::before {
+            opacity: 1;
+        }
+
+        .step-number {
+            font-size: 4rem;
+            font-weight: 900;
+            color: rgba(0,0,0,0.05);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            line-height: 1;
+        }
+
+        .navbar-landing {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-landing py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+                <i class="fa-solid fa-shield-halved text-gradient"></i> NetIDS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-4">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#how-it-works">How it Works</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#features">Capabilities</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-outline-glow px-4" href="{{ url_for('login') }}">Sign In</a></li>
+                    <li class="nav-item"><a class="btn btn-glow px-4" href="{{ url_for('register') }}">Deploy Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Complex Hero Section -->
+    <section class="hero-section">
+        <div class="hero-grid"></div>
+        <div class="glow-orb"></div>
+        <div class="glow-orb-2"></div>
+        
+        <div class="container hero-content py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animate-fade-in text-center text-lg-start">
+                    <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mb-4" style="background: rgba(0,242,254,0.1); border: 1px solid rgba(0,242,254,0.3);">
+                        <span class="spinner-grow spinner-grow-sm text-primary" role="status"></span>
+                        <span class="text-primary small fw-bold tracking-wide">SYSTEM ONLINE - V2.0</span>
+                    </div>
+                    <h1 class="display-3 fw-bold mb-4" style="line-height: 1.1;">
+                        Autonomous <br>
+                        <span class="text-gradient">Threat Detection</span>
+                    </h1>
+                    <p class="lead mb-5" style="color: #000000;">
+                        NetIDS ingests raw network telemetry and applies deep neural networks to instantly classify Zero-Day anomalies, MITM attacks, and DDoS patterns before they penetrate your perimeter.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="{{ url_for('register') }}" class="btn btn-glow btn-lg px-5 shadow-lg">Initialize Setup</a>
+                        <a href="#how-it-works" class="btn btn-outline-glow btn-lg px-5">View Architecture</a>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-4 mt-5 justify-content-center justify-content-lg-start">
+                        <div>
+                            <h3 class="fw-bold mb-0 text-dark">99.8%</h3>
+                            <span class="small" style="color: #000000;">Detection Accuracy</span>
+                        </div>
+                        <div style="width: 1px; height: 40px; background: rgba(0,0,0,0.2);"></div>
+                        <div>
+                            <h3 class="fw-bold mb-0 text-dark">< 5ms</h3>
+                            <span class="small" style="color: #000000;">Inference Latency</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dot bg-danger"></div>
+                            <div class="code-dot bg-warning"></div>
+                            <div class="code-dot bg-success"></div>
+                            <div class="ms-3 small text-black font-monospace">netids_core.py</div>
+                        </div>
+                        <div class="terminal-text">
+                            <div class="text-success mb-2"># Initializing NetIDS Neural Engine...</div>
+                            <div>> loading_weights('models/netids_model.pkl')</div>
+                            <div>> connecting_to_stream(port=5000)</div>
+                            <div class="text-warning mt-2">[WARN] Analyzing packet batch #49281...</div>
+                            <div class="mt-2 text-dark">
+                                {<br>
+                                &nbsp;&nbsp;"src_ip": "192.168.1.104",<br>
+                                &nbsp;&nbsp;"dst_port": 443,<br>
+                                &nbsp;&nbsp;"protocol": "TCP",<br>
+                                &nbsp;&nbsp;"payload_size": 1500<br>
+                                }
+                            </div>
+                            <div class="typewriter text-danger mt-3 fw-bold">
+                                > THREAT DETECTED: DDoS_HTTP Signature Match (98.4%)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5" style="background: #f8f9fa;">
+        <div class="container py-5">
+            <div class="text-center mb-5 pb-3">
+                <span class="text-primary fw-bold tracking-wide text-uppercase small">The Pipeline</span>
+                <h2 class="fw-bold mt-2 text-dark">How NetIDS Secures Your Network</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="step-number">01</div>
+                        <div class="mb-4">
+                            <div class="d-inline-flex bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                <i class="fa-solid fa-cloud-arrow-up fs-3"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-dark fw-bold mb-3">Data Ingestion</h4>
+                        <p style="color: #000000;">Upload raw PCAP or CSV logs. Our system automatically parses protocols, ports, and packet lengths into a standardized feature matrix.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box" style="transform: translateY(20px);">
+                        <div class="step-number">02</div>
+                        <div class="mb-4">
+                            <div class="d-inline-flex bg-warning bg-opacity-10 p-3 rounded-circle text-warning">
+                                <i class="fa-solid fa-microchip fs-3"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-dark fw-bold mb-3">Neural Processing</h4>
+                        <p style="color: #000000;">The Random Forest & Deep Learning ensemble analyzes the traffic signature against known malicious vectors and zero-day deviations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="step-number">03</div>
+                        <div class="mb-4">
+                            <div class="d-inline-flex bg-danger bg-opacity-10 p-3 rounded-circle text-danger">
+                                <i class="fa-solid fa-satellite-dish fs-3"></i>
+                            </div>
+                        </div>
+                        <h4 class="text-dark fw-bold mb-3">Live Interdiction</h4>
+                        <p style="color: #000000;">View the live dashboard as threats are categorized in real-time, allowing automated or manual responses to isolate the attacker.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top" style="border-color: rgba(0,0,0,0.05) !important; background: #ffffff;">
+        <div class="container">
+            <p class="mb-0" style="color: #000000;">&copy; 2026 NetIDS Application. Secure your perimeter.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
