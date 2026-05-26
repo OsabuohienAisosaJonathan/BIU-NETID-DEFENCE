@@ -9,9 +9,18 @@ class User:
 	def __init__(self):
 		create = not os.path.exists('database.db')
 		self.db = sqlite3.connect('database.db')
+		self.cursor = self.db.cursor()
 		if create:
-			self.cursor = self.db.cursor()
 			self.create("CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL, phone TEXT)")
+		else:
+			try:
+				self.cursor.execute("PRAGMA table_info(users)")
+				columns = [row[1] for row in self.cursor.fetchall()]
+				if 'phone' not in columns:
+					self.cursor.execute("ALTER TABLE users ADD COLUMN phone TEXT")
+					self.db.commit()
+			except Exception as e:
+				print("Auto-migration error adding phone column:", e)
 
 	def create(self, query=''):
 		self.cursor.execute(query)
@@ -39,11 +48,11 @@ class User:
 			return None
 		else:
 			user = {
-				"email": details[0],
-				"username": details[1],
-				"name": details[2],
-				"password": details[3],
-				"phone": details[4]
+				"email": details[0] if len(details) > 0 else "",
+				"username": details[1] if len(details) > 1 else "",
+				"name": details[2] if len(details) > 2 else "",
+				"password": details[3] if len(details) > 3 else "",
+				"phone": details[4] if len(details) > 4 else ""
 			}
 			return user
 
@@ -88,10 +97,10 @@ class User:
 			return None
 		else:
 			user = {
-				"email": details[0],
-				"username": details[1],
-				"name": details[2],
-				"password": details[3],
-				"phone": details[4]
+				"email": details[0] if len(details) > 0 else "",
+				"username": details[1] if len(details) > 1 else "",
+				"name": details[2] if len(details) > 2 else "",
+				"password": details[3] if len(details) > 3 else "",
+				"phone": details[4] if len(details) > 4 else ""
 			}
 			return user 
