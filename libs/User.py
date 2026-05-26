@@ -11,7 +11,7 @@ class User:
 		self.db = sqlite3.connect('database.db')
 		if create:
 			self.cursor = self.db.cursor()
-			self.create("CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL)")
+			self.create("CREATE TABLE users (email TEXT PRIMARY KEY, username TEXT NOT NULL, name TEXT NOT NULL, password TEXT NOT NULL, phone TEXT)")
 
 	def create(self, query=''):
 		self.cursor.execute(query)
